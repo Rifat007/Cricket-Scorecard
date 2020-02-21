@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ReceiverController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1500.0" layoutY="1.0" pickOnBounds="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <image>
+            <Image url="@579266_10150724161623398_854846415_n.jpg" />
+         </image></ImageView>
+      <Label layoutX="24.0" layoutY="34.0" prefHeight="20.0" prefWidth="65.0" text="MatchList" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="1284.0" layoutY="656.0" mnemonicParsing="false" onAction="#disconnect" text="QUIT" textFill="#1b08f2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="matchList" layoutX="24.0" layoutY="62.0" opacity="0.8" prefHeight="272.0" prefWidth="298.0" />
+      <Label layoutX="409.0" layoutY="31.0" text="Description" textFill="#2e04ea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="74.0" layoutY="343.0" mnemonicParsing="false" onAction="#showMatchDetails" text="Show" textFill="#1b08f2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="description" layoutX="355.0" layoutY="62.0" opacity="0.8" prefHeight="594.0" prefWidth="350.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextArea>
+      <ListView fx:id="sqd" layoutX="874.0" layoutY="420.0" opacity="0.8" prefHeight="265.0" prefWidth="121.0" />
+      <VBox layoutX="874.0" layoutY="54.0" prefHeight="180.0" prefWidth="350.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="280.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Sat" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Sun" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Mon" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Tues" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Wed" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Thus" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Fri" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="280.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="1" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="2" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="3" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="4" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="5" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="6" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="7" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="280.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="8" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="9" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="10" />
+                  <Button mnemonicParsing="false" onAction="#press1" prefHeight="30.0" prefWidth="50.0" text="11" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="12" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="13" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="14" />
+               </children>
+            </HBox>
+
+            <HBox prefHeight="30.0" prefWidth="280.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#press2" prefHeight="30.0" prefWidth="50.0" text="15" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="16" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="17" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="18" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="19" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="20" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="21" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="280.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="22" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="23" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="24" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="25" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="26" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="27" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="28" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="280.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="29" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="30" />
+                  <Button mnemonicParsing="false" onAction="#nomatch" prefHeight="30.0" prefWidth="50.0" text="31" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="995.0" layoutY="17.0" text="CALENDER" textFill="#4113e8">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="sss" layoutX="1074.0" layoutY="420.0" opacity="0.8" prefHeight="265.0" prefWidth="142.0" />
+      <TextArea fx:id="proper" layoutX="874.0" layoutY="261.0" opacity="0.8" prefHeight="122.0" prefWidth="399.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextArea>
+      <Label layoutX="1009.0" layoutY="393.0" prefHeight="20.0" prefWidth="65.0" text="SQUAD" textFill="#1708eb">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="17.0" text="CURRENT" textFill="#3015cd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="383.0" text="PREVIOUS" textFill="#f70707">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="pre" layoutX="24.0" layoutY="421.0" prefHeight="235.0" prefWidth="298.0" />
+      <Label layoutX="71.0" layoutY="401.0" text="Match List" textFill="#e40707">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="76.0" layoutY="659.0" mnemonicParsing="false" onAction="#show2" text="Show" textFill="#1f0572">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="mat1" layoutX="1415.0" layoutY="460.0" prefHeight="30.0" prefWidth="85.0" />
+      <TextArea fx:id="mat3" layoutX="1403.0" layoutY="506.0" prefHeight="38.0" prefWidth="97.0" />
+      <TextArea fx:id="mat2" layoutX="1436.0" layoutY="553.0" prefHeight="38.0" prefWidth="50.0" />
+      <Button layoutX="1009.0" layoutY="466.0" mnemonicParsing="false" onAction="#pp" text="Team-1" />
+      <Button layoutX="1224.0" layoutY="466.0" mnemonicParsing="false" onAction="#pp1" text="Team-2" />
+      <ListView fx:id="matt" layoutX="1436.0" layoutY="403.0" prefHeight="37.0" prefWidth="57.0" />
+   </children>
+</AnchorPane>

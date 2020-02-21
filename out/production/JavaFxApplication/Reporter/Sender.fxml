@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Reporter.SenderController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1300.0" layoutY="-71.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@403570_10150970508003398_865469888_n.jpg" />
+         </image></ImageView>
+      <Label layoutX="28.0" layoutY="21.0" prefHeight="20.0" prefWidth="92.0" text="MatchName" textAlignment="CENTER" textFill="#0c25fa" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="287.0" text="Description" textFill="#2e04ea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="description" layoutX="55.0" layoutY="326.0" prefHeight="268.0" prefWidth="401.0" promptText="Total Description">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextArea>
+      <TextField fx:id="matchName" layoutX="156.0" layoutY="19.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button layoutX="458.0" layoutY="636.0" mnemonicParsing="false" onAction="#update" text="Update" textFill="#2f08bc">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Button layoutX="593.0" layoutY="636.0" mnemonicParsing="false" onAction="#Curr_update" text="Curr Update" textFill="#5210e1">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <TextArea fx:id="summary" layoutX="50.0" layoutY="114.0" prefHeight="141.0" prefWidth="401.0" promptText="Match Summary">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextArea>
+      <Label layoutX="28.0" layoutY="79.0" prefHeight="25.0" prefWidth="100.0" text="Summary" textFill="#2708c3">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="squad" layoutX="484.0" layoutY="68.0" prefHeight="321.0" prefWidth="148.0" promptText="Team-1 Squad">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextArea>
+      <Label layoutX="610.0" layoutY="28.0" prefHeight="20.0" prefWidth="66.0" text="Squad" textFill="#430506d1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="sssss" layoutX="643.0" layoutY="68.0" prefHeight="321.0" prefWidth="135.0" promptText="Team-2 Squad">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextArea>
+      <TextArea fx:id="proper" layoutX="833.0" layoutY="68.0" prefHeight="200.0" prefWidth="347.0" promptText="Description About The Player">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
